@@ -5,7 +5,7 @@ export const todosRouter = express.Router();
 
 todosRouter.get("/", async function (req, res) {
   const todos = await todosModel.getAllTodos();
-
+  console.log(todos)
   res.status(200).json({
     success: true,
     payload: todos,

@@ -131,6 +131,7 @@ function createDeleteButtonForTodoItem(todoId) {
   deleteButton.textContent = "🗑️";
   deleteButton.title = "Delete this todo";
 
+
   async function handleClick() {
     const deleted = await todosApi.deleteTodo(todoId);
 
